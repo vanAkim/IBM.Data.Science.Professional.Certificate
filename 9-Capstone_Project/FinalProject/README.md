@@ -31,4 +31,4 @@ Unfortunately, the measurement methodology is slightly insufficient to have the 
 
 ## WORK IN PROGRESS - Analysis notebook
 
-The analysis jupyter notebook is named [Culture venues clustering in Toulouse](https://github.com/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse%20-%20Coursera%20Capstone.ipynb) and can be viewed with *INCOMING LINK*.
+The analysis jupyter notebook is named *[Culture venues clustering in Toulouse](https://github.com/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse%20-%20Coursera%20Capstone.ipynb)* and can be viewed with *INCOMING LINK*.
