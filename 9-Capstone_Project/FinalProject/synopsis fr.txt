@@ -1,0 +1,12 @@
+Toulouse est la quatrième plus grande ville de France et bien qu'elle reste de taille relativement humaine, comme la plupart des villes européennes (hormis les capitales), il y a une forte activité socio-économique. Il y a plusieurs raisons à cela, c'est entre autres la capitale européenne de l'industrie aéronautique et spatiale, et une ville avec des importants pôles universitaires. Il y a donc une fort brassage de la population et un important dynamisme au sein de la cité.
+
+Comme beaucoup d'autres villes du monde, surtout en présence d'une grande population d'étudiants et de jeunes travailleurs, des quartiers sont réputés pour regrouper de nombreux bars. Puisque j'y habite, j'ai en tête au minimum 3 lieux avec une très forte densité de bars dans des espaces restreints (i.e. ~ 10/20 les uns à côtés des autres). Il serait intéressant d'avoir un approfondissement de ce phénomène, toutefois la problématique visé dans ce rapport porte sur l'effet de regroupement mais pas à propos des bars (au même titre que des rues uniquement de boutiques). Le thème est celui de la culture et des lieux en rapport pour le public.
+
+Puisqu'il existe des clusters de bars, existe-t-il des regroupements géographique de points culturels ?
+Et si oui, est-ce que ces lieux culturels sont plus ou moins regroupés selon leur catégorie ?
+
+Cette analyse sommaire pourrait être un point d'entrée à la Ville de Toulouse pour connaître l'étendue de son aire culturelle. De plus, avec des données et analyses connexes sur ces lieux culturels (par exemple le nombre de visiteurs sur l'année, la proximité de transport en public, etc) il pourrait être possible de savoir s'il est préférable d'implémenter un musée à l'écart ou non d'autres points d'intérêts. La même conclusion peut être tirée pour l'industrie culturelle, est-ce qu'un cinéma proche d'un autre attire plus ou moins de spectateurs ?
+
+Ce rapport n'a pas autant d'ambition et cherche juste à présenter une répartition des lieux culturels référencés sur Foursquare, avec une analyse sommaire sur leur répartition géographique et vis-à-vis de leur catégorie.
+
+un biais dont ce rapport peut mettre à profit
