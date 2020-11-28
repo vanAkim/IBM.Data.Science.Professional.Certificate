@@ -11,7 +11,7 @@ And if so, are these cultural places more or less grouped according to their cat
 
 This summary analysis could be an entry point for the City of Toulouse to know the extent of its cultural area. In addition, with related data and analyzes on these cultural places (e.g. number of visitors over years, proximity to public transports, etc.) it might be possible to know whether it is better to implement a museum away or not from other points of interest. The same conclusion can be drawn for the cultural industry, does one cinema close to another attract more or less spectators?
 
-This report does not have as much ambition and just seeks to present a distribution of cultural places referenced on Foursquare, with a summary analysis on their geographical distribution and with respect to their category.
+This report does not have as much ambition and just seeks to present a distribution of cultural places referenced on Foursquare, with a summary analysis on their geographical distribution and with respect to their category. But could be helpful for more in-depth conclusions.
 
 ## Data used
 
