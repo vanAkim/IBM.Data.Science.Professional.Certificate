@@ -28,7 +28,7 @@ This work is made for the final project of [Applied Data Science Capstone by IBM
 
 The report is embedded in this README file, named as such to get better readability on Github repository page.
 
-The full analysis and python code can be viewed in the (Jupyter notebook)[https://github.com/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse.ipynb].
+The full analysis and python code can be viewed in the [Jupyter notebook](https://github.com/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse.ipynb).
 
 
 ## Synopsis
@@ -66,7 +66,7 @@ Unfortunately, the measurement methodology is slightly insufficient to have the 
 
 ## Analysis 
 
-### Cultural venues
+### 1. Cultural venues
 
 From the Foursquare API, 29 sites were collected across 21 cultural categories.  
 For futher analysis, it's important to group *(also with english translation)* categories venues. I chose 4 major areas of binning:
@@ -88,7 +88,7 @@ monument             |    3
 
 Here is the map showing the different places concerned in the city of Toulouse:
 
-> IMAGE TLS_base-cltvenues.png
+[TLS_base-cltvenues.png](./Image/TLS_base-cltvenues.png)
 
 As said previously, **there are few sites and since their distribution is quite wide without any obvious pattern (though, there seems to be a little trend at the top right), a clustering only by their geographical location might be irrelevant.**  
 Let's review the previous map, distinguishing the different categories by color.
@@ -97,8 +97,9 @@ Let's review the previous map, distinguishing the different categories by color.
 
 1. **Even if `show` is predominant and bias the view of the map, it seems that `show` venues are more located on the upper right of downtown, the dense pattern identified before.**
 2. **Other categories are much more difficult to judge because each has too small occurrences.**  
-
-### Pedestrian flows dataset
+ 
+  
+### 2. Pedestrian flows dataset
 
 Before continuing on the algorithmic step, the pedestrain flows dataset must be loaded.
 
@@ -117,7 +118,7 @@ In this sense, the primary goal of this dataset must be to mainly measure the st
 
 That's why I was precautious in the problematic development. Since I had the intuition of not being the most relevant dataset when I was searching and gathering intels to go along Foursquare points. Now, this little exploratory visualization confirms my first impressions. **However, these data is unique and the only one available of it's kinds. So I'll keep going on and try to get the most I can from it. We have the data available and not always the appropriate.**
 
-#### Proximity selection
+#### **Proximity selection**
 
 The chosen way to link the two databases is to select the nearest pedestrian flow metrics from each Foursquare site. For this, it is necessary to define a proximity criterion.  
 Here, this criterion will be a simple disk area centered on the different cultural places. If a point is present in an area of a disk, then it will be defined as being near the site at the center of the disk.
@@ -140,11 +141,12 @@ Category | Amount
 show                 |   7
 exposition-formation |   9
 
-### Machine Learning Cllustering
+
+### Machine Learning Clustering
 
 I found 2 clustering algorithms suited well to our problem: hierarchical and density-based *(DBScan)* methods.
 
-#### Latitude and longitude
+#### **a. Latitude and longitude**
 
 ##### Hierarchical clustering
 
@@ -168,7 +170,9 @@ The DBScan algorithm isn't showing anything more than previous statements, it's 
 
 > IMG TLS_clusdb-geo.png
 
-#### Adding category venues in clustering algorithm
+---
+
+#### **b. Adding category venues in clustering algorithm**
 
 **Adding culture category highly skew results and only points out the identical result as the one in [exploratory analysis in the data collecting stage](#proximity-selection) for the hierarchical clustering, which are only places separated by their respective categories.**
 
@@ -177,7 +181,9 @@ Both are made exclusively by category venue, and among them, again show category
 
 In both cases, map views are of little interest.
 
-#### Adding pedestrian flow counts in clustering algorithm
+---
+
+#### **c. Adding pedestrian flow counts in clustering algorithm**
 
 After finding optimal parameters and features to include, latitude, longitude, category and median pedestrian flow counts are used to get some clustering processes.
 
@@ -209,8 +215,8 @@ Indeed,
 ## Conclusion
 
 > *So from the original problematic,*  
-**since there are clusters of bars, are there geographic groupings of cultural points?**
-**And if so, are these cultural places more or less grouped according to their category?**
+>**since there are clusters of bars, are there geographic groupings of cultural points?**  
+>**And if so, are these cultural places more or less grouped according to their category?**
 
 In a sense, it is possible to say that Toulouse has at least one cluster of cultural places, and that it is strongly linked to a cultural category, namely `show` places. But these data points do not make it possible to judge cultural venues clusters in the same way the bars/pubs clusters which are very dense and less dispersed.  
 That conclusion can be made only with geographical variable clustering and then compare cluster labels to category venues.
