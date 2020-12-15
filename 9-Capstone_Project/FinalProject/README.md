@@ -88,7 +88,7 @@ monument             |    3
 
 Here is the map showing the different places concerned in the city of Toulouse:
 
-[TLS_base-cltvenues.png](./Image/TLS_base-cltvenues.png)
+![TLS_base-cltvenues.png](./Image/TLS_base-cltvenues.png)
 
 As said previously, **there are few sites and since their distribution is quite wide without any obvious pattern (though, there seems to be a little trend at the top right), a clustering only by their geographical location might be irrelevant.**  
 Let's review the previous map, distinguishing the different categories by color.
