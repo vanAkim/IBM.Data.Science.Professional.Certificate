@@ -11,15 +11,15 @@
 - [Analysis](#analysis)
   * [1. Cultural venues](#1-cultural-venues-1)
   * [2. Pedestrian flows dataset](#2-pedestrian-flows-dataset)
-    + [**Proximity selection**](#--proximity-selection--)
+    + [**Proximity selection**](#proximity-selection)
   * [Machine Learning Clustering](#machine-learning-clustering)
-    + [**a. Latitude and longitude**](#--a-latitude-and-longitude--)
+    + [**a. Latitude and longitude**](#a-latitude-and-longitude)
       - [Hierarchical clustering](#hierarchical-clustering)
-      - [Desnity-based clustering](#desnity-based-clustering)
-    + [**b. Adding category venues in clustering algorithm**](#--b-adding-category-venues-in-clustering-algorithm--)
-    + [**c. Adding pedestrian flow counts in clustering algorithm**](#--c-adding-pedestrian-flow-counts-in-clustering-algorithm--)
+      - [Density-based clustering](#desnity-based-clustering)
+    + [**b. Adding category venues in clustering algorithm**](#b-adding-category-venues-in-clustering-algorithm)
+    + [**c. Adding pedestrian flow counts in clustering algorithm**](#c-adding-pedestrian-flow-counts-in-clustering-algorithm)
       - [Hierarchical clustering](#hierarchical-clustering-1)
-      - [Desnity-based clustering](#desnity-based-clustering-1)
+      - [Density-based clustering](#desnity-based-clustering-1)
 - [Conclusion](#conclusion)
 
 ## Project
@@ -34,6 +34,7 @@ The report is embedded in this README file, named as such to get better readabil
 The full analysis and python code can be viewed in the dedicated [Jupyter notebook](https://github.com/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse.ipynb) on Github.  
 **However, in this notebook, many maps are rendered through Folium framework, and can't be viewed on Github preview page. Thus, it's better to see it with [Nbviewer service](https://nbviewer.jupyter.org/github/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse.ipynb).**
 
+A wrapped presentation of this report is available [here](https://vanakim.github.io/IBM_Data_Science_Professional_Certificate/9-Capstone_Project/FinalProject/Presentation.slides.html#/).
 
 ## Synopsis
 
@@ -166,7 +167,7 @@ However, as specified during data collection, due to the representation bias of 
 
 We find again an upper right cluster, the number 1, which includes 8 *(57%)* of `show` venues. This group is strongly linked both to the geographical layout and also to the presence of `show` sites. While for the other clusters, the geographical aspect seems to have a more important place in view of the distribution of categories.
 
-##### Desnity-based clustering
+##### Density-based clustering
 
 The DBScan algorithm isn't showing anything more than previous statements, it's refining the same intuition about the top right cluster mostly of `show` venues. Nonetheless, to get a better feeling of it, the map view of each venue colored by their cluster group is created below:
 
@@ -212,7 +213,7 @@ Indeed,
 
 **This data points and method doesn't show relevant or different conclusions from before. For now, adding pedestrian flow counts is too much impacting the data by reducing it. Thus, unfortunately but expected, this analysis is inconclusive.**
 
-##### Desnity-based clustering
+##### Density-based clustering
 
 **This method is worthless than the hierarchical, and not better conclusion can be made.**
 
