@@ -8,16 +8,19 @@
   * [Data used](#data-used)
     + [1. Cultural venues](#1-cultural-venues)
     + [2. Pedestrian count](#2-pedestrian-count)
-  * [Analysis](#analysis)
-    + [Cultural venues](#cultural-venues)
-    + [Pedestrian flows dataset](#pedestrian-flows-dataset)
-      - [Proximity selection](#proximity-selection)
-    + [Machine Learning Cllustering](#machine-learning-cllustering)
-      - [Latitude and longitude](#latitude-and-longitude)
-        * [Hierarchical clustering](#hierarchical-clustering)
-        * [Desnity-based clustering](#desnity-based-clustering)
-      - [Adding category venues in clustering algorithm](#adding-category-venues-in-clustering-algorithm)
-      - [Discussion](#discussion)
+- [Analysis](#analysis)
+  * [1. Cultural venues](#1-cultural-venues-1)
+  * [2. Pedestrian flows dataset](#2-pedestrian-flows-dataset)
+    + [**Proximity selection**](#--proximity-selection--)
+  * [Machine Learning Clustering](#machine-learning-clustering)
+    + [**a. Latitude and longitude**](#--a-latitude-and-longitude--)
+      - [Hierarchical clustering](#hierarchical-clustering)
+      - [Desnity-based clustering](#desnity-based-clustering)
+    + [**b. Adding category venues in clustering algorithm**](#--b-adding-category-venues-in-clustering-algorithm--)
+    + [**c. Adding pedestrian flow counts in clustering algorithm**](#--c-adding-pedestrian-flow-counts-in-clustering-algorithm--)
+      - [Hierarchical clustering](#hierarchical-clustering-1)
+      - [Desnity-based clustering](#desnity-based-clustering-1)
+- [Conclusion](#conclusion)
 
 ## Project
 
@@ -26,9 +29,10 @@ Date: 2020-12-14
 
 This work is made for the final project of [Applied Data Science Capstone by IBM/Coursera](https://www.coursera.org/learn/applied-data-science-capstone).  
 
-The report is embedded in this README file, named as such to get better readability on Github repository page.
+The report is embedded in this README file, named as such to get better readability on Github repository page. This report is focusing on the main steps to get all the data science workflow and presents most valuable blocks of the full analysis.
 
-The full analysis and python code can be viewed in the [Jupyter notebook](https://github.com/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse.ipynb).
+The full analysis and python code can be viewed in the dedicated [Jupyter notebook](https://github.com/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse.ipynb) on Github.  
+**However, in this notebook, many maps are rendered through Folium framework, and can't be viewed on Github preview page. Thus, it's better to see it with [Nbviewer service](https://nbviewer.jupyter.org/github/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse.ipynb).**
 
 
 ## Synopsis
@@ -50,7 +54,7 @@ This report does not have as much ambition and just seeks to present a distribut
 
 #### 1. Cultural venues
 
-The main points with their locations (latitude & longitude) and category, i.e. cultural places, will be retrieved from Foursquare databases using their API.   
+The main points with their location (latitude & longitude) and category, i.e. cultural places, will be retrieved from Foursquare databases using their API.   
 
 However, Foursquare's data is relatively biased since among all the cultural places in Toulouse (it is possible, for example, to find lots of these locations in different data sets on [Data.toulouse-metropole](https://data.toulouse-metropole.fr/explore/?refine.theme=Culture&sort=modified) website) a very small fraction is identified. This may be the result that the Foursquare service is little used by the resident or tourist population in this city or in France, or the way Foursquare generates its points of interest, or that cultural places visitors are rarely inclined to list their experiences on Foursquare.   
 
@@ -101,7 +105,7 @@ Let's review the previous map, distinguishing the different categories by color.
   
 ### 2. Pedestrian flows dataset
 
-Before continuing on the algorithmic step, the pedestrain flows dataset must be loaded.
+Before continuing on the algorithmic step, the pedestrian flows dataset must be loaded.
 
 Measurements are made out of 3136 counts in 96 differents streets over 5 years.  
 After cleaning irrelevant values, and grouping by measurement addresses and years to get the median value, 79 data points remain.
