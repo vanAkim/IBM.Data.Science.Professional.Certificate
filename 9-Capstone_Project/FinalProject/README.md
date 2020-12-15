@@ -93,7 +93,7 @@ Here is the map showing the different places concerned in the city of Toulouse:
 As said previously, **there are few sites and since their distribution is quite wide without any obvious pattern (though, there seems to be a little trend at the top right), a clustering only by their geographical location might be irrelevant.**  
 Let's review the previous map, distinguishing the different categories by color.
 
-> IMG TLS_dist-cltvenues.png
+![TLS_dist-cltvenues.png](./Image/TLS_dist-cltvenues.png)
 
 1. **Even if `show` is predominant and bias the view of the map, it seems that `show` venues are more located on the upper right of downtown, the dense pattern identified before.**
 2. **Other categories are much more difficult to judge because each has too small occurrences.**  
@@ -108,7 +108,7 @@ After cleaning irrelevant values, and grouping by measurement addresses and year
 
 For better understanding, the map of Toulouse is drawn with all pedestrian flow counts.
 
-> IMG TLS_base_ped.png
+![TLS_base_ped.png](./Image/TLS_base_ped.png)
 
 **Once again, this number of measurements is relatively low, but above all the distribution of points is directed and not homogeneous.** 
 
@@ -127,11 +127,11 @@ After a few tests, an area with a radius of 140 meters seems to be suitable for 
 
 Below is the map showing the previous cultural venues, now along the pedestrian flow counts and the proximity area with 140 meters radius for each Foursquare sites.
 
-> IMG TLS_ped-cltvenu.png
+![TLS_ped-cltvenu.png](./Image/TLS_ped-cltvenu.png)
 
 And now the same map with data points filtered by proximity criteria.
 
-> IMG TLS_prox_ped-cltvenu.png
+![TLS_prox_ped-cltvenu.png](./Image/TLS_prox_ped-cltvenu.png)
 
 From 79 pedestrian flow counts, 29 where close enough. And from 29 Foursquare initial cultural venues, 12 where close to at least 1 pedestrian flow count.   
 Which in this few data points projects is even more reducing it down, leaving only 2 categories:
@@ -153,7 +153,7 @@ I found 2 clustering algorithms suited well to our problem: hierarchical and den
 After finding the best fitting parameters with dendrograms selection, for the first instance only geographic feature (latitude and longitude) is taken into account.  
 The map view of each venue colored by their cluster group is giving an interesting cleavage:
 
-> IMG TLS_clus-geo
+![TLS_clus-geo.png](./Image/TLS_clus-geo.png)
 
 With this method, considering only the geographical aspect without the cultural category of each place, clustering result seems surprisingly adequate.  
 Generally speaking each category seems distributed with a dominance in one specific cluster. 
@@ -168,7 +168,7 @@ The DBScan algorithm isn't showing anything more than previous statements, it's 
 
 *NOTE: cluster labeled '-1' are outliers points, specific to the use of density-based clustering algorithms.*
 
-> IMG TLS_clusdb-geo.png
+![TLS_clusdb-geo.png](./Image/TLS_clusdb-geo.png)
 
 ---
 
@@ -194,7 +194,7 @@ It is also interesting to note that the major proportion (but not the amount) of
 
 However, with fewer data points, the usual upper right cluster mostly made of show probably remains but must be heavily sliced. Here's the map view:
 
-> IMG TLS_clus-ped.png
+![TLS_clus-ped.png](./Image/TLS_clus-ped.png)
 
 From the previous upper right cluster, only its shadow remains. 
 
