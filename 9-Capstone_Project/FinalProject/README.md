@@ -27,14 +27,14 @@
 Author: Akim van Eersel  
 Date: 2020-12-14
 
-This work is made for the final project of [Applied Data Science Capstone by IBM/Coursera](https://www.coursera.org/learn/applied-data-science-capstone).  
+🔷 This work is made for the final project of [Applied Data Science Capstone by IBM/Coursera](https://www.coursera.org/learn/applied-data-science-capstone).  
 
 The report is embedded in this README file, named as such to get better readability on Github repository page. This report is focusing on the main steps to get all the data science workflow and presents most valuable blocks of the full analysis.
 
 The full analysis and python code can be viewed in the dedicated [Jupyter notebook](https://github.com/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse.ipynb) on Github.  
-**However, in this notebook, many maps are rendered through Folium framework, and can't be viewed on Github preview page. Thus, it's better to see it with [Nbviewer service](https://nbviewer.jupyter.org/github/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse.ipynb).**
+🔷 **However, in this notebook, many maps are rendered through Folium framework, and can't be viewed on Github preview page. Thus, it's better to see it with [Nbviewer service](https://nbviewer.jupyter.org/github/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse.ipynb).**
 
-A wrapped presentation of this report is available [here](https://vanakim.github.io/IBM_Data_Science_Professional_Certificate/9-Capstone_Project/FinalProject/Presentation.slides.html#/).
+🔷 A wrapped presentation of this report is available [here](https://vanakim.github.io/IBM.Data.Science.Professional.Certificate/9-Capstone_Project/FinalProject/Presentation.slides.html#/).
 
 ## Synopsis
 
@@ -63,7 +63,7 @@ Nevertheless, it is possible in a way to take advantage of this bias without too
 
 #### 2. Pedestrian count
 
-On [Data.toulouse-metropole](https://data.toulouse-metropole.fr/explore/dataset/comptages-pietons/information/?sort=annee&location=16,43.60208,1.44634&basemap=jawg.streets) webpage a dataset is available which counts the pedestrian flows in different streets of Toulouse. This `comptages-pietons` dataset, from **Toulouse Métropole**, with last data input on **2020-02-13**, is made available under the [Open Database License](http://opendatacommons.org/licenses/odbl/1.0/) *([local license text](https://github.com/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/ODC%20Open%20Database%20License%20(ODbL).md))*. Any rights in individual contents of the database are licensed under the [Database Contents License](http://opendatacommons.org/licenses/dbcl/1.0/).  
+On [Data.toulouse-metropole](https://data.toulouse-metropole.fr/explore/dataset/comptages-pietons/information/?sort=annee&location=16,43.60208,1.44634&basemap=jawg.streets) webpage a dataset is available which counts the pedestrian flows in different streets of Toulouse. This `comptages-pietons` dataset, from **Toulouse Métropole**, with last data input on **2020-02-13**, is made available under the [Open Database License](http://opendatacommons.org/licenses/odbl/1.0/) *([local license text](https://github.com/vanAkim/IBM.Data.Science.Professional.Certificate/blob/main/9-Capstone_Project/FinalProject/ODC%20Open%20Database%20License%20(ODbL).md))*. Any rights in individual contents of the database are licensed under the [Database Contents License](http://opendatacommons.org/licenses/dbcl/1.0/).  
 
 These points could help better to cluster the cultural venues. In addition, another question that could have been added to the problematic is whether there is a correlation between the geographical position and the category of cultural places with the number of pedestrians in nearby streets. It's easy to think that the position of a historical monument or museum is determined by its long history and not by the flow of pedestrians of recent years. Conversely, a mainstream cinema probably preferred to set up in a busy street.
 
