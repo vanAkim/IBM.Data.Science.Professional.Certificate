@@ -20,7 +20,7 @@ In order of appearance, linked to the data science workflow:
       - Topics: Modeling, Machine Learning
       
 * Course: Capstone Project, n°9  
-      - Github: [9-Capstone_Project](https://github.com/vanAkim/IBM.Data.Science.Professional.Certificate/tree/main/9-Capstone_Project) 
+      - Github: [9-Capstone_Project](https://github.com/vanAkim/IBM.Data.Science.Professional.Certificate/tree/main/9-Capstone_Project)  
       - [Final project Github with complete data analysis on Readme](https://github.com/vanAkim/IBM.Data.Science.Professional.Certificate/tree/main/9-Capstone_Project/FinalProject)  
       - [Associated data science work on Jupyter Notebook *(nbviewer form)*](https://nbviewer.jupyter.org/github/vanAkim/IBM_Data_Science_Professional_Certificate/blob/main/9-Capstone_Project/FinalProject/Culture%20venues%20clustering%20in%20Toulouse.ipynb)  
       - [Project overview slides deck](https://vanakim.github.io/IBM.Data.Science.Professional.Certificate/9-Capstone_Project/FinalProject/Presentation.slides.html#/)  
