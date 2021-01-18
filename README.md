@@ -16,7 +16,7 @@ In order of appearance, linked to the data science workflow:
 
 * Course: Machine Learning with Python, n°8  
       - Github: [8-Machine_Learning_with_Python](https://github.com/vanAkim/IBM.Data.Science.Professional.Certificate/tree/main/8-Machine_Learning_with_Python)  
-      - Final project IBM Watson notebook: [ML Assignment - Final Project](https://eu-gb.dataplatform.cloud.ibm.com/analytics/notebooks/v2/77a1ee2e-5d58-493f-81ae-5ee89423e3b0/view?access_token=03513cd500a9c5e0d19c5be5de14a9e5858ab0d1f4ca878597ed99a2f2045e87)
+      - Final project IBM Watson notebook: [ML Assignment - Final Project](https://eu-gb.dataplatform.cloud.ibm.com/analytics/notebooks/v2/77a1ee2e-5d58-493f-81ae-5ee89423e3b0/view?access_token=03513cd500a9c5e0d19c5be5de14a9e5858ab0d1f4ca878597ed99a2f2045e87)  
       - Topics: Modeling, Machine Learning
 
 * Course: Capstone Project, n°9  
